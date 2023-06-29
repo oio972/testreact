@@ -1,0 +1,13 @@
+.imgCarrousel {
+    width: 80%;
+}
+.descriptionEquipements {
+    display: flex;
+    justify-content: space-around;
+}
+.etoileRouge {
+    color: #ff6060;
+}
+.etoileGrise {
+    color: grey;
+}

@@ -1,0 +1,40 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(246, 246, 246, 1);
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 10px;
+    width: 90;
+}
+.block1 {
+    display: flex;
+}
+.block2 {
+    display: flex;
+}
+.block {
+    display: flex;
+    border: 1px solid #ff6060;
+    background: #ff6060;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+.textblock {
+    margin-top: auto;
+    margin-left: 10px;
+}
+/*mobile*/
+@media screen and (max-width: 767px) {
+.block1 {
+    display: flex;
+    flex-direction: column;
+}
+.block2 {
+    display: flex;
+    flex-direction: column;
+}
+}

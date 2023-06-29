@@ -1,0 +1,46 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ff6060;
+}
+.logoBanniere {
+    background-color: white;
+    margin-bottom: 30px;
+}
+nav {
+    display: flex;
+    
+}
+.imageContainer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.imagesource {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.texteimagesource {
+    position: absolute;
+}
+/*mobile*/
+@media screen and (max-width: 767px) {
+.Header {
+   
+}
+.logoBanniere {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 30px;
+}
+.imagesource {
+    width: 90%;
+    height: 150px;
+}
+}
