@@ -1,5 +1,5 @@
 import React from "react";
-import Banner  from "../../component/Banner ";
+import Banner from "../../component/Banner";
 import Carrousel from "../../component/Carrousel";
 import Footer from "../../component/Footer";
 function Apropos(){

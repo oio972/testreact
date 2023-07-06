@@ -1,5 +1,5 @@
 .apropos {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 .imagesource2 {
@@ -12,7 +12,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
     margin: 20px auto;
     background-color: #ff6060;
     color: white;
@@ -23,8 +22,4 @@
 }
 .iconeAngle {
     margin-right: 20px;
-}
-/*mobile*/
-@media screen and (max-width: 767px) {
-    
 }

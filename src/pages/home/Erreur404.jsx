@@ -1,5 +1,5 @@
 import React from "react";
-import Banner  from "../../component/Banner ";
+import Banner from "../../component/Banner";
 import Erreur from "../../component/Erreur";
 import Footer from "../../component/Footer";
 function Erreur404(){

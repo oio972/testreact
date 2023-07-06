@@ -5,7 +5,7 @@
 }
 .imageHome {
     height: 150px;
-    width: 90%;
+    width: 80%;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -21,15 +21,19 @@
 }
 /*mobile*/
 @media screen and (max-width: 767px) {
+.imageHome {
+    display: flex;
+    justify-content: flex-start;
+}
 .textimageHome {
     display: none;
 }
 .textimageHomeMobile{
     display: flex;
-    justify-content: flex-start;
     position: absolute;
     color: white;
     font-size: 30px;
     top: 30px;
+    text-align: left;
 }
 }

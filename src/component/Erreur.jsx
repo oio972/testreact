@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Banniere from "./Banniere"
+import Banniere from "./Banner"
 import Footer from "./Footer"
 import "./erreur.css"
 function Erreur(){

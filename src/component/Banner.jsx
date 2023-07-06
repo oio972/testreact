@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "./banner .css"
-function Banner (){
+import "./banner.css"
+function Banner() {
     return(
     <div>
         <header className="Header">
@@ -13,4 +13,4 @@ function Banner (){
     </div>
     )
 }
-export default Banner ;
+export default Banner;
