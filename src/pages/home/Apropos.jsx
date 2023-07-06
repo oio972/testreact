@@ -2,9 +2,10 @@ import React from "react";
 import Banner  from "../../component/Banner ";
 import Carrousel from "../../component/Carrousel";
 import Footer from "../../component/Footer";
-function FicheLogement(){
+function Apropos(){
     return(
         <div className="App">
+        <header className="App-header">
           <Banner/>
           <Carrousel/>
           <Footer/>
@@ -15,7 +16,8 @@ function FicheLogement(){
             rel="noopener noreferrer"
           >
           </a>
+        </header>
       </div>
     )
 }
-export default FicheLogement
+export default Apropos

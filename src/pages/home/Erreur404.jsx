@@ -1,13 +1,14 @@
 import React from "react";
 import Banner  from "../../component/Banner ";
-import Carrousel from "../../component/Carrousel";
+import Erreur from "../../component/Erreur";
 import Footer from "../../component/Footer";
-function FicheLogement(){
+function Erreur404(){
     return(
         <div className="App">
-          <Banner/>
-          <Carrousel/>
-          <Footer/>
+        <header className="App-header">
+            <Banner/>
+            <Erreur/>
+            <Footer/>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -15,7 +16,8 @@ function FicheLogement(){
             rel="noopener noreferrer"
           >
           </a>
+        </header>
       </div>
     )
 }
-export default FicheLogement
+export default Erreur404

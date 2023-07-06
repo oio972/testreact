@@ -1,3 +1,6 @@
+a {
+    text-decoration: none;
+}
 .body {
     display: flex;
     flex-direction: column;
@@ -6,35 +9,44 @@
     border: 1px solid rgba(246, 246, 246, 1);
     background-color: rgba(246, 246, 246, 1);
     border-radius: 10px;
-    width: 90;
+    width: 90%;
+    margin: 30px auto 30px auto;
 }
 .block1 {
     display: flex;
+    width: 100%;
 }
 .block2 {
     display: flex;
+    width: 100%;
 }
 .block {
     display: flex;
     border: 1px solid #ff6060;
     background: #ff6060;
-    margin: 10px 10px 10px 10px;
+    margin: 20px 20px 20px 20px;
     border-radius: 10px;
-    width: 400px;
+    width: 100%;
     height: 400px;
 }
 .textblock {
     margin-top: auto;
     margin-left: 10px;
+    color: white;
 }
 /*mobile*/
 @media screen and (max-width: 767px) {
 .block1 {
     display: flex;
     flex-direction: column;
+
 }
 .block2 {
     display: flex;
     flex-direction: column;
+}
+.block {
+    width: 90%;
+    margin: 20px auto;
 }
 }

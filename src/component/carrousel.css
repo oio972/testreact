@@ -1,13 +1,83 @@
-.imgCarrousel {
+ .blocDescription {
     width: 80%;
+    margin: auto;
+    color: #ff6060;
+}
+.divimgcarrousel {
+    display: flex;
+    justify-content: center;
+}
+.imgcarrousel {
+    width: 100%;
+    height: 300px;
+}
+.imgCarrouselMobile {
+    display: none;
+}
+.bodycarrousel {
+    display: flex;
+    justify-content: space-between;
+}
+.cozycanalparis {
+    display: flex;
+    gap: 20px;
+}
+.stylecozycanalparis {
+    background-color: #ff6060;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+.alexandreCircle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cercleGris {
+    color: grey;
+    font-size: 45px;
+}
+.styledescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: white;
 }
 .descriptionEquipements {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.etoile {
+    letter-spacing: 10px;
 }
 .etoileRouge {
     color: #ff6060;
 }
 .etoileGrise {
     color: grey;
+}
+/*mobile*/
+@media screen and (max-width: 767px) {
+.imgcarrousel {
+   display: none;
+}
+.imgCarrouselMobile {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+.descriptionEquipements {
+   display: flex;
+   flex-direction: column;
+}
+.styledescription{
+    width: 100%;
+}
 }

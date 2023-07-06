@@ -1,5 +1,27 @@
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: black;
-    margin-top: 50px;
-    width: 100%;
+    margin: auto;
+    height: 150px;
+}
+.textfooter {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.textfooter1 {
+    display: none;
+}
+
+/*mobile*/
+@media screen and (max-width: 767px) {
+.textfooter {
+    display: none;
+}
+.textfooter1 {
+    display: flex;
+    color: white;
+}
 }

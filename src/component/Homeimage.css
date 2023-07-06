@@ -1,0 +1,35 @@
+.divimageHome {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.imageHome {
+    height: 150px;
+    width: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.textimageHome {
+    top: 55px;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+
+}
+.textimageHomeMobile {
+    display: none;
+}
+/*mobile*/
+@media screen and (max-width: 767px) {
+.textimageHome {
+    display: none;
+}
+.textimageHomeMobile{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 30px;
+}
+}

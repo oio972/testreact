@@ -1,0 +1,35 @@
+.bodyErreur {
+    color: #ff6060;
+}
+h1 {
+    font-size: 300px;
+    color: #ff6060;
+    margin: 0;
+}
+.erreur404 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.textOups {
+    margin-bottom: 100px;
+}
+.linkRetourner {
+    color: #ff6060;
+    text-decoration: underline;
+}
+.textOupsMobile {
+    display: none;
+}
+@media screen and ( max-width:767px) {
+h1 {
+    font-size: 200px;
+}
+.textOups {
+    display: none;
+}
+.textOupsMobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+}

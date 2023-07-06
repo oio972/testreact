@@ -1,16 +1,25 @@
 .Header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color: #ff6060;
+    width: 80%;
+    margin: 20px auto;
 }
-.logoBanniere {
-    background-color: white;
-    margin-bottom: 30px;
-}
-nav {
+.link {
     display: flex;
-    
+    gap: 50px;
+    margin-left: auto;
+}
+.lienAccueil {
+    color: #ff6060;
+    text-decoration: underline;
+}
+.lienApropos {
+    color: #ff6060;
+    text-decoration: none;
+}
+nav { 
+    display: flex;
 }
 .imageContainer {
     height: 200px;
@@ -20,9 +29,8 @@ nav {
     position: relative;
 }
 .imagesource {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    margin-bottom: 30px;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -31,13 +39,9 @@ nav {
 }
 /*mobile*/
 @media screen and (max-width: 767px) {
-.Header {
-   
-}
 .logoBanniere {
     margin: auto;
     width: 90%;
-    margin-bottom: 30px;
 }
 .imagesource {
     width: 90%;
