@@ -3,8 +3,9 @@ import Banner from "../../component/Banner";
 import Footer from "../../component/Footer";
 function Apropos(){
     return(
-        <div className="App">
+      <div className="App">
         <header className="App-header">
+        </header>
           <Banner/>
           <Footer/>
           <a
@@ -14,7 +15,7 @@ function Apropos(){
             rel="noopener noreferrer"
           >
           </a>
-        </header>
+      
       </div>
     )
 }
