@@ -1,9 +1,10 @@
-import "./carrousel.css"
+import "./carrousel.css";
+
 function Carrousel(){
     return(
+<body>
 <div className="blocDescription">
         <div className="divimgcarrousel">
-            <img className="imgcarrousel" src="imgcarrousel.png" alt="carrousel" />
             <img className="imgCarrouselMobile" src="imgCarrouselMobile.png" alt="imgsourcemobile2"/>
         </div>
     <div className="bodycarrousel">
@@ -27,10 +28,12 @@ function Carrousel(){
         </div>
     </div>
         <div className="descriptionEquipements">
-            <div className="styledescription"><p className="description">Description</p><i class="fa-sharp fa-solid fa-angle-up"></i></div>
-            <div className="styledescription"><p className="equipements">Équipements</p><i class="fa-sharp fa-solid fa-angle-up"></i></div>
+            <div className="styledescription"><p className="description">Description</p><i class="iconeAngle fa-sharp fa-solid fa-angle-up"></i></div>
+            <div className="styledescription"><p className="equipements">Équipements</p><i class="iconeAngle fa-sharp fa-solid fa-angle-up"></i></div>
         </div>
 </div>
+</body>        
+
     )
 }
 export default Carrousel

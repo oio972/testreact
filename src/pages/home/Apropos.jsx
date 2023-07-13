@@ -1,13 +1,11 @@
 import React from "react";
 import Banner from "../../component/Banner";
-import Carrousel from "../../component/Carrousel";
 import Footer from "../../component/Footer";
 function Apropos(){
     return(
         <div className="App">
         <header className="App-header">
           <Banner/>
-          <Carrousel/>
           <Footer/>
           <a
             className="App-link"

@@ -5,8 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/home/Home';
 import FicheLogement from './pages/home/FicheLogement';
-import Erreur from './component/Erreur';
 import Apropos from './component/Apropos';
+import Erreur from './component/Erreur';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

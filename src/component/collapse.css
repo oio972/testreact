@@ -1,0 +1,13 @@
+.descriptionEquipements .styledescription {
+    cursor: pointer;
+  }
+  
+  .descriptionEquipements .menuDepliant {
+    display: none;
+  }
+  
+  .descriptionEquipements .menuDepliant.visible {
+    display: block;
+  }
+  
+  

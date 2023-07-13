@@ -1,15 +1,11 @@
+ body {
+    height: 100%;
+ }
  .blocDescription {
     width: 80%;
+    height: 100%;
     margin: auto;
     color: #ff6060;
-}
-.divimgcarrousel {
-    display: flex;
-    justify-content: center;
-}
-.imgcarrousel {
-    width: 100%;
-    height: 300px;
 }
 .imgCarrouselMobile {
     display: none;
@@ -44,8 +40,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ff6060;
-    width: 40%;
-    padding: 10px;
+    width: 45%;
     margin-bottom: 30px;
     border-radius: 5px;
     color: white;
@@ -53,6 +48,9 @@
 .descriptionEquipements {
     display: flex;
     justify-content: space-between;
+}
+.description, .equipements {
+    margin-left: 10px;
 }
 .etoile {
     letter-spacing: 10px;
