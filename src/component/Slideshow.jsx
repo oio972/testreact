@@ -1,7 +1,3 @@
-
-
-
-
 import React, { useState } from 'react';
 import './slideshow.css';
 
@@ -31,8 +27,7 @@ export default function Slideshow() {
             key={index}
             className={`img ${index === currentSlide ? "active" : ""}`}
             src={image}
-            alt={`Slide ${index + 1}`}
-          />
+            alt={`Slide ${index + 1}`}/>
         ))}
       </div>
 

@@ -21,7 +21,7 @@ export default function Apropos() {
         <i className={`iconeAngle fa-solid fa-angle-up ${expandedItems.includes(0) ? 'expanded' : ''}`}></i>
       </div>
       <div className={`menuDepliant ${expandedItems.includes(0) ? 'visible' : ''}`}>
-        <p className='margeMenuDepliant'>le respect</p>
+        <p className='margeMenuDepliant'>Flabilité</p>
         {/* Contenu du menu dépliant pour l'élément 0 */}
       </div>
 
@@ -30,6 +30,7 @@ export default function Apropos() {
         <i className={`iconeAngle fa-solid fa-angle-up ${expandedItems.includes(1) ? 'expanded' : ''}`}></i>
       </div>
       <div className={`menuDepliant ${expandedItems.includes(1) ? 'visible' : ''}`}>
+      <p className='margeMenuDepliant'>le respect</p>
         {/* Contenu du menu dépliant pour l'élément 1 */}
       </div>
 
@@ -38,6 +39,7 @@ export default function Apropos() {
         <i className={`iconeAngle fa-solid fa-angle-up ${expandedItems.includes(2) ? 'expanded' : ''}`}></i>
       </div>
       <div className={`menuDepliant ${expandedItems.includes(2) ? 'visible' : ''}`}>
+      <p className='margeMenuDepliant'>Service</p>
         {/* Contenu du menu dépliant pour l'élément 2 */}
       </div>
 
@@ -46,6 +48,7 @@ export default function Apropos() {
         <i className={`iconeAngle fa-solid fa-angle-up ${expandedItems.includes(3) ? 'expanded' : ''}`}></i>
       </div>
       <div className={`menuDepliant ${expandedItems.includes(3) ? 'visible' : ''}`}>
+      <p className='margeMenuDepliant'>Sécurité</p>
         {/* Contenu du menu dépliant pour l'élément 3 */}
       </div>
     </div>
