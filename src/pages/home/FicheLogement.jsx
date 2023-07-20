@@ -1,24 +1,16 @@
 import React from "react";
 import Banner from "../../component/Banner";
+import Slideshow from "../../component/Slideshow";
 import Carrousel from "../../component/Carrousel";
 import Footer from "../../component/Footer";
 
-function FicheLogement(){
+export default function FicheLogement(){
     return(
-        <div className="App">
-        <header className="App-header">
-        </header>
+       <div>
           <Banner/>
+          <Slideshow/>
           <Carrousel/>
           <Footer/>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          </a>
-        </div> 
+       </div>
     )
 }
-export default FicheLogement

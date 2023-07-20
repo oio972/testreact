@@ -1,3 +1,6 @@
+.margeMenuDepliant {
+  margin: 0;
+}
 .apropos {
     width: 80%;
     margin: auto;
@@ -12,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px auto;
+    margin: 20px 0 0 0;
     background-color: #ff6060;
     color: white;
     border-radius: 10px;
@@ -23,3 +26,29 @@
 .iconeAngle {
     margin-right: 20px;
 }
+
+
+.descriptionapropos {
+    cursor: pointer;
+  }
+  
+  .iconeAngle {
+    transition: transform 0.3s ease;
+  }
+  
+  .iconeAngle.expanded {
+    transform: rotate(180deg);
+  }
+  
+  .menuDepliant {
+    display: none;
+    /* Autres styles pour le menu dépliant */
+  }
+  
+  .menuDepliant.visible {
+    display: block;
+    background-color: grey;
+    height: 100px;
+    /* Autres styles pour le menu dépliant visible */
+  }
+  

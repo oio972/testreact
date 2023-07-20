@@ -4,6 +4,7 @@
     color: #ff6060;
     width: 80%;
     margin: 20px auto;
+    position: relative;
 }
 .link {
     display: flex;
