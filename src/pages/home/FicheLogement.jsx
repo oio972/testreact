@@ -1,16 +1,23 @@
 import React from "react";
-import Banner from "../../component/Banner";
-import Slideshow from "../../component/Slideshow";
-import Carrousel from "../../component/Carrousel";
-import Footer from "../../component/Footer";
+import "../../component/home.css";
+import Banner from "../../component/Banner/Banner";
+import Slideshow from "../../component/Slideshow/Slideshow";
+import Apartment from "../../component/Apartment/Apartment";
+import Footer from "../../component/Footer/Footer";
 
 export default function FicheLogement(){
     return(
-       <div>
-          <Banner/>
-          <Slideshow/>
-          <Carrousel/>
-          <Footer/>
-       </div>
-    )
+      <>
+      <div className='html'>
+          <div className="rooot">
+            <Banner/>
+            <Slideshow/>
+            <Apartment/>
+         </div>
+            <div>
+               <Footer/>
+            </div>
+      </div>
+      </>
+   )
 }

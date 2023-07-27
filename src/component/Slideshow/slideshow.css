@@ -1,8 +1,6 @@
 .slideshow-container {
-  display: flex;
-  justify-content: cente;
-  position: relative;
   width: 80%;
+  margin: auto;
 } 
 .lotImage {
   display: flex;
@@ -11,9 +9,10 @@
 }
 
 .img {
-  width: 80%;
   position: absolute;
+  width: 80%;
   height: 250px;
+  border-radius: 5px;
 }
 
 .img.active {
@@ -26,13 +25,15 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  height: 300px;
   position: relative;
 }
 
 .slide-indicators {
   display: flex;
   gap: 10px;
+  position: absolute;
+  bottom: 75px;
+  z-index: 1;
 }
 
 .slide-indicator {
@@ -46,21 +47,30 @@
 .slide-indicator.active {
   background-color: #555;
 }
-
-.prev-button,
-.next-button {
-  background-color: #444;
-  color: white;
-  font-size: 20px;
-  border: none;
+.prev-button, .next-button {
+  background-color: transparent;
+  font-size: 110px;
   padding: 10px;
-  cursor: pointer;
   position: absolute;
-  height: 500px;
+  z-index: 1;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
+.prev-button {
+  left: 0px;
+  bottom: 136px;
+}
+.next-button {
+  right: -12px;
+  bottom: 138px;
+ 
+ 
+}
+.prev-button:hover, .next-button:hover {
 
-.prev-button:hover,
-.next-button:hover {
-  background-color: #444;
 }
+  
+
+
   

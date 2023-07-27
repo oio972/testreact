@@ -63,7 +63,7 @@
 }
 /*mobile*/
 @media screen and (max-width: 767px) {
-.imgcarrousel {
+.lotImage {
    display: none;
 }
 .imgCarrouselMobile {

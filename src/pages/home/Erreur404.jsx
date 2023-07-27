@@ -1,14 +1,18 @@
 import React from "react";
-import Banner from "../../component/Banner";
-import Erreur from "../../component/Erreur";
-import Footer from "../../component/Footer";
+import Banner from "../../component/Banner/Banner";
+import Erreur from "../../component/Erreur/Erreur";
+import Footer from "../../component/Footer/Footer";
 export default function Erreur404(){
     return(
-      <div>
+    <div className="html">
+      <div className="rooot">
         <Banner/>
         <Erreur/>
+      </div>
+      <div>
         <Footer/>
       </div>
+    </div>
     )
 }
 

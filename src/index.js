@@ -4,8 +4,8 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/home/Home';
 import FicheLogement from './pages/home/FicheLogement';
-import Apropos from './component/Apropos';
-import Erreur from './component/Erreur';
+import Apropos from './pages/home/Apropos';
+import Erreur404 from './pages/home/Erreur404';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +15,7 @@ root.render(
         <Route path='/' element= {<Home />}/>
         <Route path='/ficheLogement' element= {<FicheLogement />}/>
         <Route path='/Apropos' element= {<Apropos />}/>
-        <Route path="*" element={<Erreur />} />
+        <Route path="*" element={<Erreur404 />} />
       </Routes>
     </Router>
    
