@@ -1,5 +1,6 @@
 import "./Homeimage.css"
-export default function Homeimage(){
+
+const Homeimage = () => {
     return(
         <div className="divimageHome">
             <img className="imageHome" src="imagesource.png" alt="imageHome" />
@@ -8,3 +9,4 @@ export default function Homeimage(){
         </div>
     )
 }
+export default Homeimage

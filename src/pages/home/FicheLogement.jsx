@@ -2,12 +2,11 @@ import React from "react";
 import "../../component/home.css";
 import Banner from "../../component/Banner/Banner";
 import Slideshow from "../../component/Slideshow/Slideshow";
-import Apartment from "../../component/Apartment/Apartment";
 import Footer from "../../component/Footer/Footer";
+import Apartment from "../../component/Apartment/Apartment";
 
-export default function FicheLogement(){
-    return(
-      <>
+const FicheLogement = () => {
+   return(
       <div className='html'>
           <div className="rooot">
             <Banner/>
@@ -18,6 +17,6 @@ export default function FicheLogement(){
                <Footer/>
             </div>
       </div>
-      </>
    )
 }
+export default FicheLogement

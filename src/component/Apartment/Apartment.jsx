@@ -1,7 +1,10 @@
 import React from "react";
 import "./apartment.css"
 
-const apartment = ({ apartment }) => {
+const Apartment = ({ apartment }) => {
+  if (!apartment) {
+    return null
+  }
   return (
     <div className="apartment">
       <h2 className="title">{apartment.title}</h2>
@@ -29,4 +32,4 @@ const apartment = ({ apartment }) => {
   );
 };
 
-export default apartment;
+export default Apartment;

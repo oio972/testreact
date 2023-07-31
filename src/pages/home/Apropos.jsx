@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from "../../component/Footer/Footer";
 import Banner from '../../component/Banner/Banner';
 import "../../component/apropos.css";
-export default function Apropos() {
+const Apropos = () => {
   const [expandedItems, setExpandedItems] = useState([]);
 
   const toggleItem = (index) => {
@@ -62,6 +62,6 @@ export default function Apropos() {
     </div>
   );
 }
-
+export default Apropos
 
 

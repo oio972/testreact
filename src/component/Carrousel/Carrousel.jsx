@@ -1,6 +1,6 @@
 import "./carrousel.css";
 
-export default function Carrousel() {
+const Carrousel = () => {
     return(
         <div className="blocDescription">
                 <div className="divimgcarrousel">
@@ -33,3 +33,4 @@ export default function Carrousel() {
         </div>
     )
 }
+export default Carrousel

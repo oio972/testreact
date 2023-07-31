@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "../../component/Banner/Banner";
 import Erreur from "../../component/Erreur/Erreur";
 import Footer from "../../component/Footer/Footer";
-export default function Erreur404(){
+const Erreur404 = () => {
     return(
     <div className="html">
       <div className="rooot">
@@ -16,3 +16,4 @@ export default function Erreur404(){
     )
 }
 
+export default Erreur404

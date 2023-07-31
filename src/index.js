@@ -13,13 +13,12 @@ root.render(
     <Router>
       <Routes>
         <Route path='/' element= {<Home />}/>
-        <Route path='/ficheLogement' element= {<FicheLogement />}/>
+        <Route path='/ficheLogement/:id' element={<FicheLogement />} /> {/* Utilisez :id pour indiquer que c'est un paramètre d'URL */}
         <Route path='/Apropos' element= {<Apropos />}/>
         <Route path="*" element={<Erreur404 />} />
       </Routes>
     </Router>
-   
-  </React.StrictMode>
+   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./banner.css"
-export default function Banner() {
+
+const Banner = () => {
     return(
     <div className="Header">
             <img className="logored" src="logored.png" alt="logo kasa" />
@@ -11,3 +12,4 @@ export default function Banner() {
     </div>
     )
 }
+export default Banner

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './slideshow.css';
+import Apartment from '../Apartment/Apartment';
 
 export default function Slideshow() {
   const images = [
@@ -44,6 +45,7 @@ export default function Slideshow() {
         </div>
         <button className="next-button" onClick={nextSlide}>{">"}</button>
       </div>
+      <Apartment/>
     </div>
   );
 }

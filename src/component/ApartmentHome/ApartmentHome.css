@@ -6,6 +6,7 @@ p {
 }
 .body {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     flex-grow: 1;
     border: 1px solid rgba(246, 246, 246, 1);
@@ -17,13 +18,12 @@ p {
 }
 .aaa {
     flex-grow: 1;
-    width: 29%;
-    margin: 10px;
 }
 .block {
+    margin: 20px;
     border-radius: 10px;
     height: 300px;
-    width: 100%;
+    width: 29%;
     position: relative;
 }
 .titleLocation {
@@ -45,6 +45,9 @@ p {
 }
 /*mobile*/
 @media screen and (max-width: 767px) {
+.body {
+    display: block;
+}
 .block1, .block2 {
     display: flex;
     justify-content: center;
@@ -52,6 +55,6 @@ p {
 .block {
     flex: 1;
     width: auto;
-    margin: 25px;
+    margin: 0px 20px;
 }
 }
