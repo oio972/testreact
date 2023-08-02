@@ -1,22 +1,15 @@
-import React from "react";
+import React from 'react';
 import "../../component/home.css";
-import Banner from "../../component/Banner/Banner";
-import Slideshow from "../../component/Slideshow/Slideshow";
-import Footer from "../../component/Footer/Footer";
-import Apartment from "../../component/Apartment/Apartment";
+import Card from "../../component/Card/Card";
 
 const FicheLogement = () => {
    return(
-      <div className='html'>
-          <div className="rooot">
-            <Banner/>
-            <Slideshow/>
-            <Apartment/>
-         </div>
-            <div>
-               <Footer/>
-            </div>
+      <div>
+         <Card/>
       </div>
    )
-}
+ 
+
+
+};
 export default FicheLogement

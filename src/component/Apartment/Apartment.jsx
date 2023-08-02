@@ -1,30 +1,35 @@
 import React from "react";
-import "./apartment.css"
+import { useParams, Navigate } from "react-router-dom";
 
-const Apartment = ({ apartment }) => {
-  if (!apartment) {
-    return null
+import "./apartment.css"
+import LogementData from "../../component/Data/LogementData.json";
+
+const Apartment = () => {
+  const id = useParams();
+  const LogementsData = LogementData.find((apartment) => apartment.id === id.id);
+  if (!LogementsData) {
+    return <Navigate to="/Erreur404"/>
   }
   return (
     <div className="apartment">
-      <h2 className="title">{apartment.title}</h2>
-      <img className="cover" src={apartment.cover} alt={apartment.title} />
-      <p className="description">{apartment.description}</p>
+      <h2 className="title">{LogementsData.title}</h2>
+      <img className="cover" src={LogementsData.cover} alt={LogementsData.title} />
+      <p className="description">{LogementsData.description}</p>
       <div className="host">
-        <img className="hostPicture" src={apartment.host.picture} alt={apartment.host.name} />
-        <p className="hostName">{apartment.host.name}</p>
+        <img className="hostPicture" src={LogementsData.host.picture} alt={LogementsData.host.name} />
+        <p className="hostName">{LogementsData.host.name}</p>
       </div>
-      <p className="rating">Rating: {apartment.rating}</p>
-      <p className="location">Location: {apartment.location}</p>
+      <p className="rating">Rating: {LogementsData.rating}</p>
+      <p className="location">Location: {LogementsData.location}</p>
       <h3 className="equipmentsTitle">Équipements:</h3>
       <ul className="equipments">
-        {apartment.equipments.map((equipment, index) => (
+        {LogementsData.equipments.map((equipment, index) => (
           <li key={index}>{equipment}</li>
         ))}
       </ul>
       <h3 className="tagsTitle">Tags:</h3>
       <ul className="tags">
-        {apartment.tags.map((tag, index) => (
+        {LogementsData.tags.map((tag, index) => (
           <li key={index}>{tag}</li>
         ))}
       </ul>

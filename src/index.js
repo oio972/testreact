@@ -5,17 +5,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/home/Home';
 import FicheLogement from './pages/home/FicheLogement';
 import Apropos from './pages/home/Apropos';
-import Erreur404 from './pages/home/Erreur404';
+import Erreur404 from './pages/Home/Erreur404';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path='/' element= {<Home />}/>
-        <Route path='/ficheLogement/:id' element={<FicheLogement />} /> {/* Utilisez :id pour indiquer que c'est un paramètre d'URL */}
-        <Route path='/Apropos' element= {<Apropos />}/>
-        <Route path="*" element={<Erreur404 />} />
+        <Route path='/' element= {<Home/>}/>
+        <Route path='/ficheLogement/:id' element={<FicheLogement/>} /> {/* Utilisez :id pour indiquer que c'est un paramètre d'URL */}
+        <Route path='/Apropos' element= {<Apropos/>}/>
+        <Route path="*" element={<Erreur404/>} />
       </Routes>
     </Router>
    </React.StrictMode>
@@ -25,3 +25,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+ 
