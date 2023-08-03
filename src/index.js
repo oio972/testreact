@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/home/Home';
-import FicheLogement from './pages/home/FicheLogement';
-import Apropos from './pages/home/Apropos';
+import Home from './pages/Home/Home';
+import FicheLogement from './pages/Home/FicheLogement';
+import Apropos from './pages/Home/Apropos';
 import Erreur404 from './pages/Home/Erreur404';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,7 +15,7 @@ root.render(
         <Route path='/' element= {<Home/>}/>
         <Route path='/ficheLogement/:id' element={<FicheLogement/>} /> {/* Utilisez :id pour indiquer que c'est un paramètre d'URL */}
         <Route path='/Apropos' element= {<Apropos/>}/>
-        <Route path="*" element={<Erreur404/>} />
+        <Route path='*' element={<Erreur404/>} />
       </Routes>
     </Router>
    </React.StrictMode>

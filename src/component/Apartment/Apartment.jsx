@@ -1,8 +1,9 @@
 import React from "react";
-import { useParams, Navigate } from "react-router-dom";
-
 import "./apartment.css"
-import LogementData from "../../component/Data/LogementData.json";
+import { useParams, Navigate } from "react-router-dom";
+import LogementData from "../Data/LogementsData.json";
+import Tags from "../../component/Tags/Tags"
+import Ratings from "../Ratings/Ratings";
 
 const Apartment = () => {
   const id = useParams();
@@ -11,30 +12,45 @@ const Apartment = () => {
     return <Navigate to="/Erreur404"/>
   }
   return (
-    <div className="apartment">
-      <h2 className="title">{LogementsData.title}</h2>
-      <img className="cover" src={LogementsData.cover} alt={LogementsData.title} />
-      <p className="description">{LogementsData.description}</p>
-      <div className="host">
-        <img className="hostPicture" src={LogementsData.host.picture} alt={LogementsData.host.name} />
-        <p className="hostName">{LogementsData.host.name}</p>
+    <div className="information-logement">
+      <div>
+        <h2 className="title-logement">{LogementsData.title}</h2>
+        <p className="location-logement">{LogementsData.location}</p>
+        <div className="Tags">
+          {LogementsData.tags.map((tags, keytags) => (
+            <Tags key={keytags} tag={tags}/>
+          ))}
+        </div>
       </div>
-      <p className="rating">Rating: {LogementsData.rating}</p>
-      <p className="location">Location: {LogementsData.location}</p>
-      <h3 className="equipmentsTitle">Équipements:</h3>
-      <ul className="equipments">
-        {LogementsData.equipments.map((equipment, index) => (
-          <li key={index}>{equipment}</li>
-        ))}
-      </ul>
-      <h3 className="tagsTitle">Tags:</h3>
-      <ul className="tags">
-        {LogementsData.tags.map((tag, index) => (
-          <li key={index}>{tag}</li>
-        ))}
-      </ul>
+      <div>
+        <div className="host">
+          <div className="hostDetail">
+            <img className="hostPicture" src={LogementsData.host.picture} alt={LogementsData.host.name} />
+            <p className="hostName">{LogementsData.host.name}</p>
+          </div>
+          <div>
+            <Ratings/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Apartment;
+
+
+
+
+/*<h3 className="equipmentsTitle">Équipements:</h3>
+<ul className="equipments">
+  {LogementsData.equipments.map((equipment, index) => (
+    <li key={index}>{equipment}</li>
+  ))}
+</ul>
+<h3 className="tagsTitle">Tags:</h3>
+<ul className="tags">
+  {LogementsData.tags.map((tag, index) => (
+    <li key={index}>{tag}</li>
+  ))}
+</ul>*/

@@ -1,0 +1,50 @@
+.accordion, .panel {
+  width: 100%;
+  border-radius: 5px;
+}
+.accordion {
+  height: 30px;
+  background: var(--primary-color);
+  color: var(--tertiary-color);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff6060;
+  color: white;
+}
+.arrow {
+  transition: all .3s ease-in-out;
+}
+.arrow_up {
+  transform: rotate(0deg);
+}
+.arrow_down {
+  transform: rotate(180deg);
+}
+.panel {
+  background: var(--background-collapse);
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+.collapse-content {
+  padding-bottom: 12px;
+}
+.collapse-text, .list-equipements {
+  font-weight: 400;
+}
+.collapse-text {
+  margin: 0;
+  padding: 15px;
+}
+.list-equipements {
+  list-style-type: none;
+  padding: 5px 15px;
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .collapse-text, .list-equipements {
+      padding-bottom: 20px;
+  }
+}

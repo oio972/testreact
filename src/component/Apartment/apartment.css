@@ -1,6 +1,38 @@
-.apartment {
-    height: 500px;
+.information-logement {
+    display: flex;
+    justify-content: space-between;
+    color: #FF6060;
+    padding: 10px 0;
+    font-weight: 400;
+    width: 80%;
+    margin: auto;
+}
+.title-logement {
+    font-size: 16px;
+}
+.location-logement {
+    padding-top: 5px;
+    font-size: 14px;
 }
 .cover {
-    display: none;
+    height: 300px;
+}
+
+.hostDetail {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.hostPicture {
+    height: 50px;
+    border-radius: 100px;
+}
+@media screen and (min-width: 1024px) {
+    .title-logement {
+        font-size: 22px;
+    }
+    .location-logement {
+        font-size: 12px;
+    }
 }

@@ -1,9 +1,15 @@
+.rooot {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .margeMenuDepliant {
   margin: 0;
 }
 .apropos {
     width: 80%;
     margin: auto;
+    flex-grow: 1;
 }
 .imagesource2 {
     width: 100%;
@@ -55,4 +61,3 @@
     height: 100px;
     /* Autres styles pour le menu dépliant visible */
   }
-  

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../component/home.css";
+import "./home.css";
 import Banner  from "../../component/Banner/Banner";
 import Homeimage from "../../component/Homeimage/Homeimage";
 import Card from '../../component/Card/Card';
@@ -9,20 +9,16 @@ import LogementsData from '../../component/Data/LogementsData.json';
 const Home = () => {
   return (
     <div className='html'>
-        <div className="rooot">
-          <Banner/>
-          <Homeimage/>
+      <Banner/>
+      <Homeimage/>
+        {LogementsData.map((keyhome) =>(
           <div className='body'>
-            {LogementsData.map((house) =>(
-              <div>
-                <Card house={house}/>
-              </div>
+            <Card key={keyhome.id} house={keyhome}/>
+          </div>
         ))}
-          </div>
-        </div>
-          <div>
-            <Footer/>
-          </div>
+      <div>
+        <Footer/>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,31 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.body {
+    width: 80%;
+    margin: auto;
+}
+.bodyFicheLogement {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.blockDescriptionEquipements {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    flex-grow: 1;
+}
+.descriptions {
+    width: 45%;
+}
+.equipements {
+    width: 50%;
+}
+.divRatings {
+    width: 80%;
+    margin: auto;
+}
