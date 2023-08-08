@@ -1,9 +1,32 @@
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    min-height: 100vh;
+}
+.gallery_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Affiche les logements en trois colonnes */
+    justify-items: center;
+    border-radius: 25px;
+    flex-grow: 1;
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr); /* Passe à deux colonnes sur les écrans plus petits */
+    }
+    
+    @media (max-width: 767px) {
+      padding: 15px 0;
+      grid-template-columns: 1fr; /* Une colonne sur les écrans encore plus petits */
+    }
+  }
 .App {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 .body {
+    display: flex;
     width: 80%;
     margin: auto;
 }
@@ -29,3 +52,11 @@
     width: 80%;
     margin: auto;
 }
+
+
+@media screen and (max-width: 767px) {
+    .gallery_container {
+        display: block;
+    }
+}
+    

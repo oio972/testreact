@@ -14,8 +14,7 @@ const CollapseLogement = ({ title, content }) => {
             
             {show && (
                 <div className="panel">
-
-                {Array.isArray(content) ? 
+                    {Array.isArray(content) ? 
                     (
                         <ul className="list-equipements">
                             {content.map((equipment, keyindex) => (

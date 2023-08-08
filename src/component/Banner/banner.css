@@ -6,6 +6,9 @@
     margin: 20px auto;
     position: relative;
 }
+.logored {
+    width: 200px;
+}
 .link {
     display: flex;
     gap: 50px;
@@ -40,12 +43,16 @@ nav {
 }
 /*mobile*/
 @media screen and (max-width: 767px) {
+.logored {
+    width: 100px;
+}
 .logoBanniere {
-    margin: auto;
-    width: 90%;
+margin: auto;
+width: 90%;
 }
 .imagesource {
     width: 90%;
     height: 150px;
 }
+
 }

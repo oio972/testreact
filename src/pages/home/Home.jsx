@@ -11,14 +11,14 @@ const Home = () => {
     <div className='html'>
       <Banner/>
       <Homeimage/>
-        {LogementsData.map((keyhome) =>(
-          <div className='body'>
-            <Card key={keyhome.id} house={keyhome}/>
-          </div>
-        ))}
-      <div>
-        <Footer/>
-      </div>
+      <section className="gallery">
+        <div className="gallery_container">
+          {LogementsData.map((inputValue => <Card value={inputValue} key={inputValue.id}/>))}
+        </div>
+      </section>
+        <div>
+          <Footer/>
+        </div>
     </div>
   )
 }
