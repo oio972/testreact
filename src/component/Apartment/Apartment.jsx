@@ -12,32 +12,37 @@ const Apartment = () => {
     return <Navigate to="/Erreur404"/>
   }
   return (
-    <div className="information-logement">
-      <div>
-        <h2 className="title-logement">{LogementsData.title}</h2>
-        <p className="location-logement">{LogementsData.location}</p>
-        <div className="Tags">
+<div className="blockInformationLogement">
+  <div className="informationLogementHost">
+    <div className="informationLogement">
+        <h2 className="titleLogement">{LogementsData.title}</h2>
+        <p className="locationLogement">{LogementsData.location}</p>
+      <div className="Tags">
           {LogementsData.tags.map((tags, keytags) => (
             <Tags key={keytags} tag={tags}/>
-          ))}
-        </div>
-      </div>
-      <div>
-        <div className="host">
-          <div className="hostDetail">
-            <img className="hostPicture" src={LogementsData.host.picture} alt={LogementsData.host.name} />
-            <p className="hostName">{LogementsData.host.name}</p>
-          </div>
-          <div>
-            <Ratings/>
-          </div>
-        </div>
+            ))}
       </div>
     </div>
+  <div className="host">
+      <div className="hostDetail">
+          <div className="photoPrenom">
+              <img className="hostPicture" src={LogementsData.host.picture} alt={LogementsData.host.name} />
+              <p className="hostName">{LogementsData.host.name}</p>
+          </div>
+        <div>
+            <Ratings/>
+        </div>
+      </div>
+  </div>
+    </div>
+</div>
   );
 };
 
 export default Apartment;
+
+
+
 
 
 

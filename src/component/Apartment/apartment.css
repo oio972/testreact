@@ -1,38 +1,46 @@
-.information-logement {
-    display: flex;
-    justify-content: space-between;
-    color: #FF6060;
-    padding: 10px 0;
-    font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
+.blockInformationLogement {
+    color: #ff6060;
     width: 80%;
     margin: auto;
 }
-.title-logement {
-    font-size: 16px;
+.informationLogementHost {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
 }
-.location-logement {
-    padding-top: 5px;
-    font-size: 14px;
+.informationLogement {
+    color: #ff6060;
+  }
+.titleLogement {
+    width: 80%;
+    margin-top: 10px;
 }
-.cover {
-    height: 300px;
+.host {
+    margin-top: 10px;
 }
-
-.hostDetail {
+.photoPrenom {
     display: flex;
     flex-direction: row-reverse;
     gap: 10px;
-    margin-bottom: 10px;
 }
 .hostPicture {
     height: 50px;
     border-radius: 100px;
 }
-@media screen and (min-width: 1024px) {
-    .title-logement {
-        font-size: 22px;
-    }
-    .location-logement {
-        font-size: 12px;
-    }
+@media screen and (max-width: 767px) {
+.informationLogementHost {
+    display: flex;
+    flex-direction: column;
+}
+.hostDetail {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.hostName {
+    display: flex;
+}
 }

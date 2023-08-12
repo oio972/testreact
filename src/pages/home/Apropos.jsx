@@ -18,7 +18,7 @@ const Apropos = () => {
         <Banner/>
         <div className="apropos">
           <img className="imagesource2" src="imagesource2.png" alt="imgsource2" />
-
+        <div className='divdescriptionapropos'>
           <div className="descriptionapropos" onClick={() => toggleItem(0)}>
             <p className="textapropos">Flabilité</p>
             <i className={`iconeAngle fa-solid fa-angle-up ${expandedItems.includes(0) ? 'expanded' : ''}`}></i>
@@ -55,13 +55,15 @@ const Apropos = () => {
             {/* Contenu du menu dépliant pour l'élément 3 */}
           </div>
         </div>
+        </div>
       </div>
-      <div>
+      <div className='aproposFooter'>
         <Footer/>
       </div>
     </div>
   );
 }
 export default Apropos
+
 
 

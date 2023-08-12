@@ -32,7 +32,7 @@ const FicheLogement = () => {
             </div>
             )}
          </div>
-         <div>
+         <div className='footerWrapper'>
             <Footer/>
          </div>
       </div>

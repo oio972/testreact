@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
 .footer {
     display: flex;
     justify-content: center;
@@ -5,7 +6,6 @@
     background-color: black;
     width: 100%;
     height: 200px;
-    position: absolute;
 }
 .textfooter {
     display: flex;

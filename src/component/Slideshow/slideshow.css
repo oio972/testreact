@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
 .carousel {
     position: relative;
 }
@@ -9,7 +10,6 @@
     width: 80%;
     margin: auto;
     height: 300px;
-    object-fit: cover;
     border-radius: 15px;
 }
 .arrow-slide {

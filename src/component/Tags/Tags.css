@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
 .tags {
     display: inline-block;
     border-radius: 8px;
     background: #FF6060;
     padding: 5px 15px;
-    margin: 0 10px 10px 0;
+    margin: 0 10px 15px 0;
     font-size: 10px;
     color: white;
+}
+@media screen and (max-width:767px) {
+    .tags {
+        margin: 0 10px 0px 0;
+    }
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
 .accordion, .panel {
   width: 100%;
   border-radius: 5px;
@@ -23,8 +24,8 @@
   transform: rotate(180deg);
 }
 .panel {
-  background: var(--background-collapse);
-  color: var(--primary-color);
+  background: rgba(246, 246, 246, 1);
+  color: #ff6060;
   margin-bottom: 25px;
 }
 .collapse-content {
