@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
+body {
+    margin: 0;
+}
 .gallery {
     display: flex;
     justify-content: space-between;
@@ -21,16 +24,8 @@
       grid-template-columns: 1fr; /* Une colonne sur les écrans encore plus petits */
     }
   }
-.App {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-.body {
-    display: flex;
-    width: 80%;
-    margin: auto;
-}
+
+
 .bodyFicheLogement {
     display: flex;
     flex-direction: column;
@@ -54,7 +49,7 @@
     width: 80%;
     margin: auto;
 }
-  
+
 @media screen and (max-width: 767px) {
 .html {
     min-width: 45vh;

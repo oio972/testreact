@@ -1,12 +1,12 @@
 import React from 'react';
 import "./home.css";
 import { Navigate, useParams } from 'react-router-dom';
-import LogementsData from "../../component/Data/LogementsData.json";
-import Banner from '../../component/Banner/Banner';
-import SlideShow from "../../component/SlideShow/SlideShow"
-import Apartment from '../../component/Apartment/Apartment';
-import CollapseLogement from '../../component/CollapseLogement/CollapseLogement';
-import Footer from "../../component/Footer/Footer";
+import LogementsData from "../component/Data/LogementsData.json";
+import Banner from '../component/Banner/Banner';
+import SlideShow from "../component/SlideShow/SlideShow"
+import Apartment from '../component/Apartment/Apartment';
+import CollapseLogement from '../component/CollapseLogement/CollapseLogement';
+import Footer from "../component/Footer/Footer";
 
 const FicheLogement = () => {
    const {id} = useParams()
@@ -39,6 +39,7 @@ const FicheLogement = () => {
    </>
    )
 };
+// Exportation du composant FicheLogement en tant qu'exportation par défaut
 export default FicheLogement
    
 

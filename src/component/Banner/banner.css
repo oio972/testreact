@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
+a {
+    text-decoration: none;
+}
 .Header {
     display: flex;
     align-items: center;
@@ -7,7 +10,7 @@
     margin: 20px auto;
     position: relative;
 }
-.logored {
+.logored { 
     width: 200px;
 }
 .link {
@@ -15,14 +18,17 @@
     gap: 50px;
     margin-left: auto;
 }
-.lienAccueil {
-    color: #ff6060;
-    text-decoration: underline;
-}
-.lienApropos {
-    color: #ff6060;
+.lienAccueil, .lienApropos {
+    color: #ff6060; /* Couleur de base pour les liens */
     text-decoration: none;
 }
+.lienAccueil.active {
+    text-decoration: underline; /* Soulignement pour le lien actif */
+}
+.lienApropos.active {
+    text-decoration: underline; /* Soulignement pour le lien actif */
+}
+
 nav { 
     display: flex;
 }
